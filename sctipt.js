@@ -1,41 +1,23 @@
 'use strict';
 
-// задание 2//
-function pow (x, n) {
-    const y=x;
-      while ( n>1 ){
-        x *= y;
-        n--;
-      }
-      return x;
-    }  
-    
-    alert ( pow(3, 3) );
-    alert ( pow(3, 2) );
-    alert ( pow(1, 100));
- // задание 1//
+ // Homework 21.01 //
+// Задание 2//
+const forEachArr = ['Anna', 12, 'Sam', 9, 'Kate', 10, 'Ron', 9];
+forEachArr.forEach(forEach => {
+  if (typeof forEach === "string") {
+    console.log(forEach + " - string value");
+  } else {
+    console.log(forEach + " - number value");
+  }
+});
 
- function min( a, b ){
-    console.log( (a<b)? a : b );
-    }
-    
+// Задание 3//
+const mapArr = [1, 4, 2, 67, 34, 2, 50, 23, 11, 10, 5, 4, 9, 21];
+const mapArr_1 = mapArr.map(elem => {
+    return elem + 10;
+});
+console.log(mapArr_1);
+console.log(mapArr);
 
-    min(2, 5)
-    min(3, -1)
-    min(1, 1)
-// задание 3//
-
-function isEven(num) {
-     return num % 2 == 0;
-    }
-  
-  console.log(isEven(5));
-  console.log(isEven(4));
-
-  //задание 0 //
-
-  function say_hello(name) {
-
-    alert("Hello, " + name)
- 
- }
+const arr = new Array('hi, 2, 3, true');
+console.log(arr.length);
